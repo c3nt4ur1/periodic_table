@@ -1,0 +1,8 @@
+//
+// Created by ANBonin on 02/09/2022.
+//
+
+#ifndef PERIODIC_TABLE_ELEMENT_H
+#define PERIODIC_TABLE_ELEMENT_H
+
+#endif //PERIODIC_TABLE_ELEMENT_H
