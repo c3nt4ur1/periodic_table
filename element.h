@@ -9,7 +9,7 @@
 using namespace std;
 
 class Element{
-protected:
+public:
     int atomic_number;
     float mass;
     const char* symbol;
@@ -22,10 +22,9 @@ protected:
     bool la = false;
     bool ac = false;
     bool radioactive;
-    string electronic_distribution;
+    const char* electronic_distribution;
 
-public:
-    Element(int n, float mass, const char* symbol, int period, int group, const char * name, int valence, bool is_metal, string* distribution, bool radioactive){
+    Element(int n, float mass, const char* symbol, int period, int group, const char* name, int valence, bool is_metal, const char* distribution, bool radioactive){
         this-> atomic_number = n;
         this-> mass = mass;
         this-> symbol = symbol;
@@ -34,7 +33,7 @@ public:
         this->name = name;
         this->valence_layer = valence;
         this->is_metal = is_metal;
-        this->electronic_distribution = *distribution;
+        this->electronic_distribution = distribution;
         this->radioactive = radioactive;
 
         switch (group) {
@@ -74,6 +73,8 @@ public:
                 this->family = "7A";
             case 18:
                 this->family = "8A";
+            default:
+                this->family = "UNK";
         }
         if(is_metal){
             if(group == 3){
@@ -85,6 +86,9 @@ public:
                 }
             }
         }
+    }
+    ~Element(){
+        delete this;
     }
 };
 
