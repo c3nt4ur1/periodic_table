@@ -20,10 +20,11 @@ protected:
     bool is_metal;
     bool la = false;
     bool ac = false;
+    bool radioactive;
     string electronic_distribution;
 
 public:
-    Element(int n, float mass, const char* symbol, int period, int group, const char * name, int valence, bool is_metal, string* distribution){
+    Element(int n, float mass, const char* symbol, int period, int group, const char * name, int valence, bool is_metal, string* distribution, bool radioactive){
         this-> atomic_number = n;
         this-> mass = mass;
         this-> symbol = symbol;
@@ -33,6 +34,7 @@ public:
         this->valence_layer = valence;
         this->is_metal = is_metal;
         this->electronic_distribution = *distribution;
+        this->radioactive = radioactive;
 
         switch (group) {
             case 1:
