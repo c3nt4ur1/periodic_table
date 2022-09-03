@@ -1,6 +1,7 @@
-//
-// Created by ANBonin on 02/09/2022.
-//
+/*
+ * Created by ANBonin on 02/09/2022.
+ * Copyright [2022] [c3nt4ur1@github.com]
+ */
 
 #ifndef PERIODIC_TABLE_ELEMENT_H
 #define PERIODIC_TABLE_ELEMENT_H
