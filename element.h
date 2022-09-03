@@ -9,7 +9,7 @@
 using namespace std;
 
 class Element{
-protected:
+public:
     int atomic_number;
     float mass;
     const char* symbol;
@@ -24,7 +24,6 @@ protected:
     bool radioactive;
     string electronic_distribution;
 
-public:
     Element(int n, float mass, const char* symbol, int period, int group, const char * name, int valence, bool is_metal, string* distribution, bool radioactive){
         this-> atomic_number = n;
         this-> mass = mass;
@@ -85,6 +84,9 @@ public:
                 }
             }
         }
+    }
+    ~Element(){
+        delete this;
     }
 };
 
