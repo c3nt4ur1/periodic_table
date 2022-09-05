@@ -25,9 +25,9 @@ public:
     const char* electronic_distribution;
 
     Element(int n, float mass, const char* symbol, int period, int group, const char* name, int valence, bool is_metal, const char* distribution, bool radioactive){
-        this-> atomic_number = n;
-        this-> mass = mass;
-        this-> symbol = symbol;
+        this->atomic_number = n;
+        this->mass = mass;
+        this->symbol = symbol;
         this->period = period;
         this->group = group;
         this->name = name;
