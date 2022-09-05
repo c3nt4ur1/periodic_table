@@ -21,5 +21,8 @@ Element Oxygen(8, 15.9994, "O", 2, 16, "Oxygen", 6, false, "[He] 2s2 2p4", false
 Element Fluorine(9, 18.9984032, "F", 2, 17, "Fluorine", 7, false, "[He] 2s2 2p5", false);
 Element Neon(10, 20.1797, "Ne", 2, 18, "Neon", 8, false, "1s2 2s2 2p6", false);
 
+//Third period
+Element Sodium(11, 22.98976928, "Na", 3, 1, "Sodium", 1, true, "[Ne] 3s1", false);
+
 
 #endif //PERIODIC_TABLE_PERIODIC_TABLE_H
