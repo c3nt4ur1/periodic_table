@@ -24,8 +24,9 @@ public:
     bool radioactive;
     const char* electronic_distribution;
     const char* classification;
+    int charge;
 
-    Element(int n, float mass, const char* symbol, int period, int group, const char* name, int valence, bool is_metal, const char* distribution, bool radioactive){
+    Element(int n, float mass, const char* symbol, int period, int group, const char* name, int valence, bool is_metal, const char* distribution, bool radioactive, int charge) {
         this->atomic_number = n;
         this->mass = mass;
         this->symbol = symbol;
@@ -36,6 +37,7 @@ public:
         this->is_metal = is_metal;
         this->electronic_distribution = distribution;
         this->radioactive = radioactive;
+        this->charge = charge;
 
         switch (group) {
             case 1:
@@ -92,7 +94,7 @@ public:
                 this->classification = "Chalcogen"; //Not a typo
             case 17:
                 this->family = "7A";
-                this->classification = "Halogens"
+                this->classification = "Halogens";
             case 18:
                 this->family = "8A";
                 this->classification = "Noble Gases";
