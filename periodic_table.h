@@ -24,6 +24,11 @@ Element Neon(10, 20.1797, "Ne", 2, 18, "Neon", 8, false, "1s2 2s2 2p6", false, 0
 //Third period
 Element Sodium(11, 22.98976928, "Na", 3, 1, "Sodium", 1, true, "[Ne] 3s1", false, 1);
 Element Magnesium(12, 24.305, "Mg", 3, 2, "Magnesium", 2, true, "[Ne] 3s2", false, 2);
-
+Element Aluminium(13, 26.9815386, "Al", 3, 13, "Aluminium", 3, true, "[Ne] 3s2 3p1", false, 3);
+Element Silicon(14, 28.0855, "Si", 3, 14, "Silicon", 4, false, "[Ne] 3s2 3p2", false, 4);
+Element Phosphorus(15, 30.973762, "P", 3, 15, "Phosphorus", 5, false, "[Ne] 3s2 3p3", false, -3);
+Element Sulfur(16, 32.065, "S", 3, 16, "Sulfur", 6, false, "[Ne] 3s2 3p4", false, -2);
+Element Chlorine(17, 35.453, "Cl", 3, 17, "Chlorine", 7, false, "[Ne] 3s2 3p5", false, -1);
+Element Argon(18, 39.948, "Ar", 3, 18, "Argon", 8, false, "1s2 2s2 2p6 3s2 3p6", false, 0);
 
 #endif //PERIODIC_TABLE_PERIODIC_TABLE_H
